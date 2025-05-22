@@ -1,4 +1,5 @@
 //test
+import java.util.Scanner;
 import java.util.Random;
 public class Elevator{
 
@@ -25,15 +26,18 @@ public class Elevator{
     public int isBroken() {
         for(int i = 0; i < listRunning.length; i++){
             if(listRunning[i] == false) {
-                waitTime += Math.random()*3 + 2;
+                waitTime += Math.random()*2 + 3;
                 
             }
         }
+        return waitTime;
     }
 
+    public int isRushHour() {
+        //need to impliment what period it is
 
-    public Elevator{
-        isBroken[1] = 1Elevator;
+    }
+
         
 
     }
@@ -41,5 +45,4 @@ public class Elevator{
     //public boolean isLate{}
     //public int lateTime{}
    // public boolean isBroken{}
-    //public int waitTime{}
- }
+
